@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary SEO -->
+<title>Rushton Property Improvements | Kitchen &amp; Bathroom Specialists, Glossop, Derbyshire</title>
+<meta name="description" content="Expert kitchen and bathroom installation specialists based in Glossop, Derbyshire. Serving the High Peak including Hadfield, Tintwistle, Charlesworth, Padfield and surrounding areas. Free home visit within 3 days. Call today.">
+<meta name="keywords" content="kitchen fitter Glossop, bathroom fitter Glossop, kitchen installer Derbyshire, bathroom renovation High Peak, wet room Glossop, tiling Glossop, kitchen fitting Hadfield, bathroom Tintwistle, property improvements Glossop, kitchen bathroom specialist SK13">
+<meta name="author" content="Rushton Property Improvements">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://rushtonpropertyimprovements.co.uk/">
+
+<!-- Geo targeting -->
+<meta name="geo.region" content="GB-DBY">
+<meta name="geo.placename" content="Glossop, Derbyshire">
+<meta name="geo.position" content="53.4435;-1.9490">
+<meta name="ICBM" content="53.4435, -1.9490">
+
+<!-- Open Graph (social sharing) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rushton Property Improvements | Kitchen &amp; Bathroom Specialists, Glossop">
+<meta property="og:description" content="Expert kitchen and bathroom installations across Glossop, Derbyshire and the High Peak. Trusted local specialists with 15+ years experience.">
+<meta property="og:url" content="https://rushtonpropertyimprovements.co.uk/">
+<meta property="og:site_name" content="Rushton Property Improvements">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rushton Property Improvements | Kitchen &amp; Bathroom Specialists, Glossop">
+<meta name="twitter:description" content="Expert kitchen and bathroom installations across Glossop, Derbyshire and the High Peak.">
+
+<!-- Local Business Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Rushton Property Improvements",
+  "description": "Expert kitchen and bathroom installation specialists based in Glossop, Derbyshire. Serving the High Peak and surrounding areas.",
+  "url": "https://rushtonpropertyimprovements.co.uk",
+  "telephone": "07951797755",
+  "email": "rushtonproperty@icloud.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Glossop",
+    "addressRegion": "Derbyshire",
+    "postalCode": "SK13",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 53.4435,
+    "longitude": -1.9490
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "13:00"
+    }
+  ],
+  "areaServed": [
+    {"@type": "City", "name": "Glossop"},
+    {"@type": "City", "name": "Hadfield"},
+    {"@type": "City", "name": "Tintwistle"},
+    {"@type": "City", "name": "Charlesworth"},
+    {"@type": "City", "name": "Padfield"},
+    {"@type": "City", "name": "Simmondley"},
+    {"@type": "City", "name": "Gamesley"},
+    {"@type": "City", "name": "Old Glossop"},
+    {"@type": "City", "name": "Hollingworth"},
+    {"@type": "City", "name": "Mottram"},
+    {"@type": "City", "name": "Broadbottom"},
+    {"@type": "Place", "name": "High Peak"}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Property Improvement Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kitchen Fitting", "description": "Bespoke kitchen design and full installation including cabinets, worktops and appliances."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bathroom Renovation", "description": "Full bathroom refurbishment including suite installation, tiling and plumbing."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Tiling and Flooring", "description": "Expert floor and wall tiling in ceramic, porcelain, stone or mosaic."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Wet Rooms and En-Suites", "description": "Luxury wet room design and installation with full waterproofing."}}
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "6",
+    "bestRating": "5"
+  },
+  "review": [
+    {"@type": "Review", "author": {"@type": "Person", "name": "Sarah C."}, "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "reviewBody": "Absolute stars. Our kitchen was completely transformed. On time, on budget and the result is beyond what we imagined."},
+    {"@type": "Review", "author": {"@type": "Person", "name": "Mark H."}, "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "reviewBody": "From quote to completion in three weeks. Professional, tidy and the bathroom looks like something from a show home."},
+    {"@type": "Review", "author": {"@type": "Person", "name": "Deborah W."}, "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "reviewBody": "The tiling work on our kitchen floor is just stunning. Real craftsmanship — every tile is perfectly aligned."}
+  ]
+}
+
+/* ===== CAROUSEL JS ===== */
+var carouselImages = [];
+var carouselIndex = 0;
+var carouselSlideWidth = 0;
+var carouselPerView = 3;
+var lbIndex = 0;
+var isDragging = false;
+var dragStartX = 0;
+var dragDelta = 0;
+
+
+function loadCarouselAdmin() {
+  var list = document.getElementById('adminCarouselList');
+  if (!list) return;
+  list.innerHTML = '';
+  if (!carouselImages.length) {
+    list.innerHTML = '<p style="font-size:12px;color:rgba(255,255,255,.3)">No images in carousel yet.</p>';
+    return;
+  }
+  carouselImages.forEach(function(src, i) {
+    var row = document.createElement('div');
+    row.style.cssText = 'display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.03);padding:8px;border:1px solid rgba(255,255,255,.06)';
+    var img = document.createElement('img');
+    img.src = src; img.style.cssText = 'width:56px;height:40px;object-fit:cover;flex-shrink:0';
+    var url = document.createElement('div');
+    url.style.cssText = 'flex:1;font-size:11px;color:rgba(255,255,255,.4);overflow:hidden;text-overflow:ellipsis;white-space:nowrap';
+    url.textContent = src.split('/').pop().split('?')[0];
+    var del = document.createElement('button');
+    del.innerHTML = '&times;';
+    del.style.cssText = 'background:rgba(255,50,50,.15);border:none;color:#ff8080;width:28px;height:28px;cursor:pointer;font-size:16px;flex-shrink:0';
+    (function(idx) {
+      del.addEventListener('click', function() {
+        carouselImages.splice(idx, 1);
+        saveCarouselToStorage();
+        buildCarousel();
+        loadCarouselAdmin();
+        showToast('Image removed');
+      });
+    })(i);
+    row.appendChild(img); row.appendChild(url); row.appendChild(del);
+    list.appendChild(row);
+  });
+}
+function initCarousel() {
+  var wrap = document.querySelector('.carousel-track-wrap');
+  if (!wrap) return;
+  // Drag support
+  wrap.addEventListener('mousedown', function(e) { isDragging = true; dragStartX = e.clientX; dragDelta = 0; });
+  window.addEventListener('mousemove', function(e) { if (!isDragging) return; dragDelta = e.clientX - dragStartX; });
+  window.addEventListener('mouseup', function() {
+    if (!isDragging) return; isDragging = false;
+    if (Math.abs(dragDelta) > 50) carouselMove(dragDelta < 0 ? 1 : -1);
+    dragDelta = 0;
+  });
+  // Touch support
+  wrap.addEventListener('touchstart', function(e) { dragStartX = e.touches[0].clientX; }, {passive:true});
+  wrap.addEventListener('touchend', function(e) {
+    var dx = e.changedTouches[0].clientX - dragStartX;
+    if (Math.abs(dx) > 40) carouselMove(dx < 0 ? 1 : -1);
+  });
+}
+
+function buildCarousel() {
+  var track = document.getElementById('carouselTrack');
+  var empty = document.getElementById('carouselEmpty');
+  var dots = document.getElementById('carouselDots');
+  if (!track) return;
+  track.innerHTML = '';
+  if (dots) dots.innerHTML = '';
+  if (!carouselImages.length) {
+    if (empty) empty.style.display = 'block';
+    return;
+  }
+  if (empty) empty.style.display = 'none';
+  carouselImages.forEach(function(src, i) {
+    var slide = document.createElement('div'); slide.className = 'carousel-slide';
+    var img = document.createElement('img'); img.src = src; img.alt = 'Gallery image ' + (i+1);
+    img.loading = 'lazy';
+    var ov = document.createElement('div'); ov.className = 'carousel-slide-overlay';
+    ov.innerHTML = '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>';
+    slide.appendChild(img); slide.appendChild(ov);
+    (function(idx){ slide.addEventListener('click', function(){ openCarouselLightbox(idx); }); })(i);
+    track.appendChild(slide);
+    if (dots) {
+      var dot = document.createElement('button'); dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      (function(idx){ dot.addEventListener('click', function(){ carouselGoTo(idx); }); })(i);
+      dots.appendChild(dot);
+    }
+  });
+  carouselIndex = 0;
+  updateCarouselPos();
+  updateCarouselPer();
+}
+
+function updateCarouselPer() {
+  var w = window.innerWidth;
+  carouselPerView = w <= 540 ? 1 : w <= 900 ? 2 : 3;
+}
+
+function carouselMove(dir) {
+  updateCarouselPer();
+  var max = Math.max(0, carouselImages.length - carouselPerView);
+  carouselIndex = Math.max(0, Math.min(carouselIndex + dir, max));
+  updateCarouselPos();
+}
+
+function carouselGoTo(idx) {
+  updateCarouselPer();
+  var max = Math.max(0, carouselImages.length - carouselPerView);
+  carouselIndex = Math.max(0, Math.min(idx, max));
+  updateCarouselPos();
+}
+
+function updateCarouselPos() {
+  var track = document.getElementById('carouselTrack');
+  if (!track) return;
+  var slides = track.querySelectorAll('.carousel-slide');
+  if (!slides.length) return;
+  var gap = 16;
+  var slideW = slides[0].offsetWidth + gap;
+  track.style.transform = 'translateX(-' + (carouselIndex * slideW) + 'px)';
+  // Update dots
+  document.querySelectorAll('.carousel-dot').forEach(function(d, i) {
+    d.classList.toggle('active', i === carouselIndex);
+  });
+}
+
+function openCarouselLightbox(idx) {
+  lbIndex = idx;
+  var lb = document.getElementById('carouselLightbox');
+  var img = document.getElementById('carouselLbImg');
+  var ctr = document.getElementById('carouselLbCounter');
+  if (!lb || !img) return;
+  img.src = carouselImages[idx];
+  if (ctr) ctr.textContent = (idx+1) + ' / ' + carouselImages.length;
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  var lb = document.getElementById('carouselLightbox');
+  if (lb) lb.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function lbMove(dir, e) {
+  if (e) e.stopPropagation();
+  lbIndex = (lbIndex + dir + carouselImages.length) % carouselImages.length;
+  openCarouselLightbox(lbIndex);
+}
+
+window.addEventListener('resize', function() { updateCarouselPos(); });
+window.addEventListener('keydown', function(e) {
+  var lb = document.getElementById('carouselLightbox');
+  if (lb && lb.classList.contains('open')) {
+    if (e.key === 'ArrowLeft') lbMove(-1, null);
+    if (e.key === 'ArrowRight') lbMove(1, null);
+    if (e.key === 'Escape') closeLightbox();
+  }
+});
+
+function saveCarouselToStorage() {
+  try { localStorage.setItem('rpi_carousel', JSON.stringify(carouselImages)); } catch(e) {}
+}
+
+function restoreCarousel() {
+  try {
+    var saved = localStorage.getItem('rpi_carousel');
+    if (saved) {
+      carouselImages = JSON.parse(saved);
+      buildCarousel();
+    }
+  } catch(e) {}
+}
+
+
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--orange:#E8621A;--orange-dark:#C0481A;--grey:#6B6B6B;--grey-light:#F2F2F0;--grey-mid:#D0CFCC;--black:#111111;--white:#FFFFFF;--font-display:'Outfit',sans-serif;--font-body:'Manrope',sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--black);background:var(--white);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 32px}
+.section-pad{padding:80px 32px}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .3s,box-shadow .3s;padding:0 40px}
+nav.scrolled,.page:not(#page-home) ~ * nav,nav.solid{background:var(--black);box-shadow:0 2px 20px rgba(0,0,0,.3)}
+nav.at-top-home{background:transparent}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.nav-logo{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--white);cursor:pointer}
+.nav-logo span{color:var(--orange)}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);cursor:pointer;letter-spacing:.5px;transition:color .2s;text-transform:uppercase}
+.nav-links a:hover,.nav-links a.active{color:var(--white)}
+.nav-cta{background:var(--orange);color:var(--white)!important;padding:9px 22px;font-weight:600!important;transition:background .2s!important}
+.nav-cta:hover{background:var(--orange-dark)!important}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.burger span{display:block;width:24px;height:2px;background:var(--white);transition:all .3s}
+/* MOBILE MENU */
+.mobile-menu{display:none;position:fixed;inset:0;background:var(--black);z-index:200;flex-direction:column;align-items:center;justify-content:center;gap:32px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-family:var(--font-display);font-size:28px;font-weight:700;color:var(--white);cursor:pointer;transition:color .2s}
+.mobile-menu a:hover{color:var(--orange)}
+.mobile-close{position:absolute;top:24px;right:28px;background:none;border:none;color:var(--white);font-size:28px;cursor:pointer}
+/* PAGES */
+.page{display:none;min-height:100vh}
+.page.active{display:block}
+/* PAGE HEADER */
+.page-header{background:var(--black);padding:120px 40px 64px;text-align:center}
+.page-header-label{font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-bottom:14px}
+.page-header h1{font-family:var(--font-display);font-size:clamp(36px,5vw,64px);font-weight:800;color:var(--white);line-height:1.05;margin-bottom:16px}
+.page-header p{font-size:16px;color:rgba(255,255,255,.5);max-width:520px;margin:0 auto;line-height:1.7}
+/* HERO */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0d0d0d 0,#1a1a1a 50%,#0d0d0d 100%)}
+.hero-bg-img{position:absolute;inset:0;background-image:url('https://res.cloudinary.com/dtfvdl8ph/image/upload/v1779135860/IMG_20251128_163647067_io8vv7.jpg');background-size:cover;background-position:center;opacity:0.8;mix-blend-mode:normal}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.75) 50%,rgba(0,0,0,.3))}
+.hero-content{position:relative;z-index:2;padding:0 52px;max-width:720px;padding-top:80px}
+.hero-label{font-size:11px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-bottom:20px;animation:fiu .6s ease both}
+.hero-h1{font-family:var(--font-display);font-size:clamp(42px,6vw,80px);font-weight:800;color:var(--white);line-height:1.0;letter-spacing:-1px;margin-bottom:20px;animation:fiu .7s ease .15s both}
+.hero-sub{font-size:18px;font-weight:600;color:rgba(255,255,255,.92);max-width:520px;line-height:1.7;margin-bottom:42px;animation:fiu .8s ease .3s both;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap;animation:fiu .8s ease .45s both}
+.btn-primary{padding:16px 36px;background:var(--orange);color:var(--white);font-family:var(--font-display);font-size:14px;font-weight:700;letter-spacing:.5px;border:none;cursor:pointer;transition:background .2s,transform .2s}
+.btn-primary:hover{background:var(--orange-dark);transform:translateY(-2px)}
+.btn-outline{padding:16px 36px;background:transparent;color:var(--white);font-family:var(--font-display);font-size:14px;font-weight:700;letter-spacing:.5px;border:1.5px solid rgba(255,255,255,.35);cursor:pointer;transition:all .2s}
+.btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.08)}
+@keyframes fiu{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+/* MARQUEE */
+.marquee-wrap{background:var(--orange);overflow:hidden;padding:14px 0}
+.marquee-track{display:flex;gap:0;white-space:nowrap;animation:marquee 20s linear infinite}
+.marquee-track span{font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--white);padding:0 32px}
+.marquee-track span::before{content:'\25C6';margin-right:32px;opacity:.6}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+/* SERVICES GRID */
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:48px}
+.service-card{background:var(--grey-light);padding:36px 28px;transition:background .2s}
+.service-card:hover{background:var(--black)}
+.service-card:hover .sc-title,.service-card:hover .sc-desc{color:var(--white)}
+.service-card:hover .sc-icon svg{stroke:var(--orange)}
+.sc-icon{width:44px;height:44px;margin-bottom:20px}
+.sc-icon svg{width:44px;height:44px;stroke:var(--black);stroke-width:1.5;fill:none;transition:stroke .2s}
+.sc-title{font-family:var(--font-display);font-size:18px;font-weight:700;margin-bottom:10px;transition:color .2s}
+.sc-desc{font-size:13px;color:var(--grey);line-height:1.7;transition:color .2s}
+/* WHY US */
+.why-us{background:var(--black);padding:80px 40px}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;max-width:1200px;margin:0 auto}
+.why-card h4{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px}
+.why-card p{font-size:13px;color:rgba(255,255,255,.45);line-height:1.7}
+.why-card-icon{width:36px;height:36px;background:rgba(232,98,26,.15);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+/* REVIEWS */
+.reviews-section{padding:80px 40px;background:var(--grey-light)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px;margin:40px auto 0}
+.review-card{background:var(--white);padding:28px;border-top:3px solid var(--orange)}
+.review-stars{color:var(--orange);font-size:14px;margin-bottom:12px}
+.review-text{font-size:14px;color:var(--grey);line-height:1.7;margin-bottom:16px;font-style:italic}
+.review-author{font-family:var(--font-display);font-size:13px;font-weight:700;color:var(--black)}
+/* CTA BAND */
+.cta-band{background:var(--orange);padding:64px 40px;text-align:center}
+.cta-band h2{font-family:var(--font-display);font-size:clamp(28px,4vw,48px);font-weight:800;color:var(--white);margin-bottom:12px}
+.cta-band p{font-size:16px;color:rgba(255,255,255,.8);margin-bottom:32px}
+.btn-white{padding:16px 40px;background:var(--white);color:var(--orange);font-family:var(--font-display);font-size:14px;font-weight:700;border:none;cursor:pointer;transition:all .2s}
+.btn-white:hover{background:var(--black);color:var(--white)}
+/* FOOTER */
+footer{background:var(--black);padding:24px 40px}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:16px;border-top:1px solid rgba(255,255,255,.08)}
+.footer-copy{font-size:12px;color:rgba(255,255,255,.3)}
+.footer-copy span{color:rgba(255,255,255,.2)}
+.footer-reg{font-size:11px;color:rgba(255,255,255,.2)}
+/* SERVICES PAGE */
+.services-page-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:1200px;margin:0 auto;padding:80px 40px}
+.sp-card{padding:40px;background:var(--grey-light)}
+.sp-card h3{font-family:var(--font-display);font-size:24px;font-weight:700;margin-bottom:12px}
+.sp-card p{font-size:14px;color:var(--grey);line-height:1.8}
+/* PROCESS */
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0 0 80px}
+.process-step{padding:40px 32px;border-right:1px solid var(--grey-mid);position:relative}
+.process-step:last-child{border-right:none}
+.process-step.active{background:var(--black)}
+.process-step.active .ps-num,.process-step.active .ps-title,.process-step.active .ps-desc{color:var(--white)}
+.ps-num{font-family:var(--font-display);font-size:48px;font-weight:800;color:var(--grey-mid);line-height:1;margin-bottom:16px;transition:color .3s}
+.ps-title{font-family:var(--font-display);font-size:18px;font-weight:700;margin-bottom:8px;transition:color .3s}
+.ps-desc{font-size:13px;color:var(--grey);line-height:1.7;transition:color .3s}
+.process-stats{display:grid;grid-template-columns:repeat(3,1fr);background:var(--black);margin-bottom:0}
+.process-stat{padding:40px;border-right:1px solid rgba(255,255,255,.08);text-align:center}
+.process-stat:last-child{border-right:none}
+.pnum{font-family:var(--font-display);font-size:52px;font-weight:800;color:var(--orange);line-height:1;margin-bottom:8px}
+.ptxt{font-size:12px;color:rgba(255,255,255,.45);line-height:1.6}
+.ptxt strong{display:block;font-size:14px;color:rgba(255,255,255,.7);margin-bottom:4px}
+.process-checklist-wrap{padding:64px 40px;max-width:600px;margin:0 auto;text-align:left}
+.process-checklist-wrap h3{font-family:var(--font-display);font-size:28px;font-weight:700;margin-bottom:8px}
+.process-checklist-wrap p{color:var(--grey);margin-bottom:32px;font-size:15px}
+.process-checklist{list-style:none;display:flex;flex-direction:column;gap:14px}
+.process-checklist li{display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--black)}
+.chk{width:22px;height:22px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+/* PROJECTS */
+.projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:1200px;margin:0 auto;padding:64px 40px}
+.project-card{background:var(--white);border:1px solid var(--grey-mid);overflow:hidden;transition:box-shadow .3s,transform .3s}
+.project-card:hover{box-shadow:0 12px 40px rgba(0,0,0,.1);transform:translateY(-3px)}
+.project-card-img{width:100%;aspect-ratio:4/3;background:var(--grey-light);position:relative;overflow:hidden}
+.project-card-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.project-card:hover .project-card-img img{transform:scale(1.05)}
+.project-card-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:var(--grey-mid)}
+.project-card-placeholder span{font-size:12px}
+.project-card-body{padding:26px 28px 20px}
+.project-card-cat{display:none}
+.project-card-title{font-family:var(--font-display);font-size:24px;font-weight:700;color:var(--black);margin-bottom:12px;line-height:1.2}
+.project-card-desc{font-size:14px;color:var(--grey);line-height:1.7;font-weight:300;white-space:pre-wrap}
+.project-card-thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;padding:0 28px 20px}
+.project-card-thumb{aspect-ratio:1;overflow:hidden;background:var(--grey-light);cursor:pointer;position:relative}
+.project-card-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.project-card-thumb:hover img{transform:scale(1.08)}
+.project-card-thumb-more{position:absolute;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--font-display);font-size:14px;font-weight:700}
+/* CONTACT */
+.contact-wrap{display:grid;grid-template-columns:1fr 1fr;max-width:1200px;margin:0 auto;padding:64px 40px;gap:80px}
+.contact-form-title{font-family:var(--font-display);font-size:28px;font-weight:700;margin-bottom:28px}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey);margin-bottom:8px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:13px 16px;border:1.5px solid var(--grey-mid);font-family:var(--font-body);font-size:14px;outline:none;transition:border-color .2s;background:var(--white)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--orange)}
+.form-group textarea{resize:vertical;min-height:120px}
+.form-submit{width:100%;padding:16px;background:var(--orange);color:var(--white);border:none;font-family:var(--font-display);font-size:14px;font-weight:700;cursor:pointer;letter-spacing:.5px;transition:background .2s}
+.form-submit:hover{background:var(--orange-dark)}
+.contact-info-title{font-family:var(--font-display);font-size:22px;font-weight:700;margin-bottom:24px}
+.contact-info-item{display:flex;gap:16px;margin-bottom:24px;align-items:flex-start}
+.ci-label{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--orange);margin-bottom:4px}
+.ci-val{font-size:15px;color:var(--black);font-weight:400}
+.contact-success{display:none;text-align:center;padding:48px 24px}
+.contact-success h3{font-family:var(--font-display);font-size:24px;font-weight:700;margin-bottom:12px;color:var(--orange)}
+/* PREMIUM GALLERY */
+/* ===== PREMIUM GALLERY ===== */
+.pg-wrap{padding:48px 40px 48px;max-width:900px;margin:0 auto;background:var(--white)}
+.pg-main{background:var(--white);position:relative;margin-bottom:4px;border:1px solid var(--grey-mid)}
+.pg-main-img-wrap{position:relative;overflow:hidden;background:var(--white);cursor:pointer;line-height:0;display:flex;align-items:center;justify-content:center;min-height:300px}
+.pg-main-img-wrap img{width:100%;max-height:64vh;object-fit:contain;display:block;transition:transform .6s cubic-bezier(.25,.1,.25,1)}
+.pg-main-overlay{position:absolute;inset:0;background:rgba(0,0,0,0);display:flex;align-items:flex-end;justify-content:flex-end;padding:20px;transition:background .3s;opacity:0}
+.pg-main-img-wrap:hover .pg-main-overlay{opacity:1;background:rgba(0,0,0,.2)}
+.pg-main-img-wrap:hover img{transform:scale(1.02)}
+.pg-expand-btn{display:flex;align-items:center;gap:8px;background:rgba(0,0,0,.65);backdrop-filter:blur(8px);color:#fff;padding:10px 18px;font-family:var(--font-body);font-size:12px;font-weight:500;letter-spacing:.5px;border:1px solid rgba(255,255,255,.2);cursor:pointer;transition:background .2s}
+.pg-expand-btn:hover{background:var(--orange)}
+.pg-main-info{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:var(--grey-light);border-top:1px solid var(--grey-mid)}
+.pg-counter{font-family:var(--font-display);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--grey)}
+.pg-arrows{display:flex;gap:4px}
+.pg-arrow{width:40px;height:40px;background:var(--white);border:1px solid var(--grey-mid);color:var(--grey);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.pg-arrow:hover{background:var(--orange);border-color:var(--orange);color:#fff}
+.pg-thumbs-wrap{overflow-x:auto;scrollbar-width:thin;scrollbar-color:rgba(232,98,26,.4) var(--grey-light);background:var(--white);padding:12px 0 0;border-top:none}
+.pg-thumbs-wrap::-webkit-scrollbar{height:3px}
+.pg-thumbs-wrap::-webkit-scrollbar-track{background:var(--grey-light)}
+.pg-thumbs-wrap::-webkit-scrollbar-thumb{background:rgba(232,98,26,.5)}
+.pg-thumbs{display:flex;gap:6px;min-width:max-content}
+.pg-thumb{width:88px;height:60px;overflow:hidden;cursor:pointer;position:relative;flex-shrink:0;border:2px solid transparent;transition:border-color .2s,opacity .2s;opacity:.5}
+.pg-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.pg-thumb:hover{opacity:.8}
+.pg-thumb:hover img{transform:scale(1.08)}
+.pg-thumb.active{border-color:var(--orange);opacity:1}
+.pg-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:50vh;color:var(--grey-mid);gap:12px;background:var(--grey-light)}
+.pg-empty p{font-size:15px;font-weight:400;color:var(--grey)}
+/* Lightbox */
+.pg-lightbox{position:fixed;inset:0;background:rgba(0,0,0,.97);z-index:2000;display:none;align-items:center;justify-content:center;opacity:0;transition:opacity .3s}
+.pg-lightbox.open{display:flex;opacity:1}
+.pg-lb-img-wrap{max-width:90vw;max-height:90vh;display:flex;align-items:center;justify-content:center}
+.pg-lb-img-wrap img{max-width:88vw;max-height:88vh;object-fit:contain;display:block;box-shadow:0 20px 80px rgba(0,0,0,.8)}
+.pg-lb-close{position:fixed;top:20px;right:24px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:#fff;width:44px;height:44px;font-size:22px;cursor:pointer;z-index:10;transition:background .2s;display:flex;align-items:center;justify-content:center}
+.pg-lb-close:hover{background:var(--orange);border-color:var(--orange)}
+.pg-lb-prev,.pg-lb-next{position:fixed;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#fff;width:52px;height:52px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:10}
+.pg-lb-prev:hover,.pg-lb-next:hover{background:var(--orange);border-color:var(--orange)}
+.pg-lb-prev{left:16px}
+.pg-lb-next{right:16px}
+.pg-lb-counter{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);font-family:var(--font-display);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.35)}
+@media(max-width:768px){.pg-wrap{padding:24px 16px 32px}.pg-thumb{width:64px;height:44px}.pg-lb-prev{left:6px}.pg-lb-next{right:6px}.pg-main-img-wrap img{max-height:45vh}.pg-main-img-wrap{min-height:200px}}
+
+
+
+/* LIGHTBOX */
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:1000;display:none;align-items:center;justify-content:center}
+#lightbox.open{display:flex}
+#lightboxContent{max-width:90vw;max-height:88vh;display:flex;flex-direction:column;align-items:center;gap:12px}
+#lightboxContent img{max-width:88vw;max-height:82vh;object-fit:contain}
+/* ADMIN */
+.admin-panel{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:500;display:none;align-items:flex-start;justify-content:flex-end;backdrop-filter:blur(4px)}
+.admin-panel.open{display:flex}
+.admin-inner{width:480px;max-width:100vw;height:100vh;background:#0d0d0d;overflow-y:auto;padding:40px 32px}
+.admin-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px}
+.admin-logo{font-family:var(--font-display);font-size:18px;font-weight:700;color:var(--white)}
+.admin-logo span{color:var(--orange)}
+.admin-close-btn{background:none;border:none;color:rgba(255,255,255,.4);font-size:24px;cursor:pointer;transition:color .2s}
+.admin-close-btn:hover{color:var(--white)}
+.admin-section{margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.06)}
+.admin-section:last-child{border-bottom:none}
+.admin-section-title{font-family:var(--font-display);font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--white);margin-bottom:6px}
+.admin-section-sub{font-size:12px;color:rgba(255,255,255,.3);margin-bottom:20px;line-height:1.6}
+.admin-field{margin-bottom:14px}
+.admin-field label{display:block;font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:6px}
+.admin-field input,.admin-field textarea,.admin-field select{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:var(--white);padding:11px 13px;font-family:var(--font-body);font-size:14px;outline:none;transition:border-color .2s}
+.admin-field input:focus,.admin-field textarea:focus,.admin-field select:focus{border-color:var(--orange)}
+.admin-field textarea{resize:vertical;min-height:100px}
+.admin-save-btn{padding:11px 24px;background:var(--orange);color:var(--white);border:none;font-family:var(--font-display);font-size:13px;font-weight:700;cursor:pointer;transition:background .2s;width:100%}
+.admin-save-btn:hover{background:var(--orange-dark)}
+.admin-drop-zone{border:2px dashed rgba(255,255,255,.12);padding:36px 20px;text-align:center;cursor:pointer;transition:border-color .3s;position:relative}
+.admin-drop-zone.dragover{border-color:var(--orange)}
+.admin-drop-zone h4{font-family:var(--font-display);font-size:14px;font-weight:600;color:rgba(255,255,255,.5);margin:12px 0 6px}
+.admin-drop-zone p{font-size:12px;color:rgba(255,255,255,.25)}
+.admin-pick-btn{display:inline-block;margin-top:14px;padding:8px 20px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.7);font-family:var(--font-body);font-size:13px;cursor:pointer}
+.admin-drop-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer}
+.admin-preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+.admin-preview-item{position:relative;aspect-ratio:1;overflow:hidden;background:rgba(255,255,255,.05)}
+.admin-preview-item img,.admin-preview-item video{width:100%;height:100%;object-fit:cover}
+.cat-badge{position:absolute;bottom:4px;left:4px;background:rgba(0,0,0,.7);color:#fff;font-size:9px;padding:2px 6px;text-transform:uppercase;letter-spacing:1px}
+.del-btn{position:absolute;top:4px;right:4px;background:rgba(200,0,0,.8);border:none;color:#fff;width:22px;height:22px;cursor:pointer;font-size:14px;display:flex;align-items:center;justify-content:center}
+.admin-publish-btn{width:100%;padding:13px;background:rgba(255,255,255,.07);color:rgba(255,255,255,.4);border:1px solid rgba(255,255,255,.1);font-family:var(--font-display);font-size:13px;font-weight:700;cursor:not-allowed;margin-top:16px;transition:all .2s}
+.admin-publish-btn:not([disabled]){background:var(--orange);color:var(--white);border-color:var(--orange);cursor:pointer}
+.admin-toast{position:fixed;bottom:24px;right:24px;background:var(--black);color:var(--white);padding:12px 20px;font-size:13px;font-family:var(--font-body);opacity:0;transition:opacity .3s;pointer-events:none;z-index:600;border-left:3px solid var(--orange)}
+.admin-toast.show{opacity:1}
+.admin-modal{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:600;display:flex;align-items:center;justify-content:center}
+.admin-modal-box{background:#111;padding:40px;max-width:380px;width:90%;text-align:center}
+.admin-modal-box h3{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--white);margin-bottom:8px}
+.admin-modal-box p{font-size:13px;color:rgba(255,255,255,.4);margin-bottom:24px}
+.admin-modal-box input{width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:var(--white);padding:12px 16px;font-size:16px;text-align:center;outline:none;margin-bottom:16px;letter-spacing:4px}
+.admin-modal-box button{width:100%;padding:12px;background:var(--orange);color:var(--white);border:none;font-family:var(--font-display);font-size:14px;font-weight:700;cursor:pointer}
+.admin-proj-fields{display:grid;grid-template-columns:1fr;gap:0}
+.admin-proj-upload{display:flex;flex-direction:column;gap:8px}
+.admin-proj-file-label{display:inline-block;padding:8px 16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.7);font-family:var(--font-body);font-size:13px;cursor:pointer;transition:all .2s}
+.admin-proj-file-label:hover{background:rgba(232,98,26,.2);border-color:var(--orange);color:var(--white)}
+.admin-proj-thumb{width:100%;aspect-ratio:16/9;background:rgba(255,255,255,.04);overflow:hidden;margin-bottom:8px;position:relative}
+.admin-proj-thumb img{width:100%;height:100%;object-fit:cover}
+.admin-proj-thumb-ph{font-size:11px;color:rgba(255,255,255,.28);text-align:center;padding:6px}
+.admin-current-proj{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);margin-bottom:8px}
+.admin-current-proj-info{display:flex;align-items:center;gap:12px}
+.admin-current-proj-thumb{width:48px;height:36px;object-fit:cover;background:rgba(255,255,255,.05);flex-shrink:0}
+.admin-current-proj-title{font-size:14px;color:var(--white);font-weight:500}
+.admin-current-proj-del{background:rgba(255,50,50,.15);border:1px solid rgba(255,80,80,.3);color:#ff8080;padding:6px 14px;font-family:var(--font-body);font-size:12px;cursor:pointer;transition:all .2s;flex-shrink:0}
+.admin-current-proj-del:hover{background:rgba(255,50,50,.3)}
+/* RESPONSIVE */
+@media(max-width:1024px){.services-grid{grid-template-columns:1fr 1fr}.why-grid{grid-template-columns:1fr 1fr}.reviews-grid{grid-template-columns:1fr 1fr}.process-steps{grid-template-columns:1fr 1fr}.services-page-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.nav-links{display:none}.burger{display:flex}.hero-content{padding:100px 24px 40px}.projects-grid{grid-template-columns:1fr}.contact-wrap{grid-template-columns:1fr;gap:40px}}
+@media(max-width:640px){.services-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}.reviews-grid{grid-template-columns:1fr}.process-steps{grid-template-columns:1fr}.process-stats{grid-template-columns:1fr}.hero-btns{flex-direction:column}.section-pad{padding:48px 20px}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav" class="at-top-home">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="goTo('home')">Rushton<span>.</span></div>
+    <div class="nav-links">
+      <a onclick="goTo('home')" data-page="home">Home</a>
+      <a onclick="goTo('services')" data-page="services">Services</a>
+      <a onclick="goTo('gallery')" data-page="gallery">Gallery</a>
+      <a onclick="goTo('process')" data-page="process">Our Process</a>
+      <a onclick="goTo('projects')" data-page="projects">Projects</a>
+      <a onclick="goTo('contact')" data-page="contact" class="nav-cta">Get a Quote</a>
+    </div>
+    <div class="burger" onclick="openMenu()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMenu()">&#x2715;</button>
+  <a onclick="goTo('home');closeMenu()" data-page="home">Home</a>
+  <a onclick="goTo('services');closeMenu()" data-page="services">Services</a>
+  <a onclick="goTo('gallery');closeMenu()" data-page="gallery">Gallery</a>
+  <a onclick="goTo('process');closeMenu()" data-page="process">Our Process</a>
+  <a onclick="goTo('projects');closeMenu()" data-page="projects">Projects</a>
+  <a onclick="goTo('contact');closeMenu()" data-page="contact">Get a Quote</a>
+</div>
+
+<!-- HOME -->
+<div class="page active" id="page-home">
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-bg-img"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-label">Glossop &amp; High Peak</div>
+      <h1 class="hero-h1">Kitchen &amp; Bathroom Specialists</h1>
+      <p class="hero-sub">Expert kitchen and bathroom installations across Glossop, Derbyshire and the surrounding High Peak area. Craftsmanship you can trust, results you'll love.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="goTo('contact')">Get a Free Quote</button>
+        <button class="btn-outline" onclick="goTo('projects')">View Our Work</button>
+      </div>
+    </div>
+  </section>
+  <div class="marquee-wrap"><div class="marquee-track"><span>Kitchen Installations</span><span>Bathroom Renovations</span><span>Tiling &amp; Flooring</span><span>Joinery</span><span>Wet Rooms</span><span>En-Suites</span><span>Kitchen Installations</span><span>Bathroom Renovations</span><span>Tiling &amp; Flooring</span><span>Joinery</span><span>Wet Rooms</span><span>En-Suites</span></div></div>
+  <div class="container section-pad">
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="sc-icon"><svg viewBox="0 0 48 48"><rect x="6" y="14" width="36" height="26" rx="1"/><path d="M6 22h36"/><rect x="14" y="22" width="10" height="10"/></svg></div>
+        <div class="sc-title">Kitchen Fitting</div>
+        <div class="sc-desc">Bespoke kitchen design and full installation including cabinets, worktops and integrated appliances.</div>
+      </div>
+      <div class="service-card">
+        <div class="sc-icon"><svg viewBox="0 0 48 48"><path d="M8 30c0-8 5-14 16-14s16 6 16 14"/><path d="M4 30h40"/><path d="M4 38h40"/></svg></div>
+        <div class="sc-title">Bathroom Renovation</div>
+        <div class="sc-desc">Full bathroom refurbishment including suite installation, tiling, plumbing and finishing.</div>
+      </div>
+      <div class="service-card">
+        <div class="sc-icon"><svg viewBox="0 0 48 48"><rect x="6" y="6" width="16" height="16" rx="1"/><rect x="26" y="6" width="16" height="16" rx="1"/><rect x="6" y="26" width="16" height="16" rx="1"/><rect x="26" y="26" width="16" height="16" rx="1"/></svg></div>
+        <div class="sc-title">Tiling &amp; Flooring</div>
+        <div class="sc-desc">Expert floor and wall tiling in ceramic, porcelain, stone or mosaic — perfectly laid every time.</div>
+      </div>
+      <div class="service-card">
+        <div class="sc-icon"><svg viewBox="0 0 48 48"><rect x="10" y="8" width="28" height="34" rx="2"/><line x1="18" y1="8" x2="18" y2="42"/><line x1="10" y1="20" x2="38" y2="20"/></svg></div>
+        <div class="sc-title">Joinery</div>
+        <div class="sc-desc">Bespoke joinery including fitted wardrobes, shelving, media walls and custom carpentry.</div>
+      </div>
+    </div>
+  </div>
+  <div class="why-us">
+    <div class="why-grid">
+      <div class="why-card"><div class="why-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8621A" stroke-width="2" stroke-linecap="round"><polyline points="20,6 9,17 4,12"/></svg></div><h4>Free home visit</h4><p>We come to you within 3 days of enquiry, assess the space and provide a full itemised quote — no obligation.</p></div>
+      <div class="why-card"><div class="why-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8621A" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div><h4>Fixed price guarantee</h4><p>Your quote is your price. No hidden charges, no mid-project surprises. Everything agreed upfront in writing.</p></div>
+      <div class="why-card"><div class="why-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8621A" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div><h4>One point of contact</h4><p>One project manager coordinates everything start to finish. You always know who to call.</p></div>
+      <div class="why-card"><div class="why-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8621A" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><h4>Local specialists</h4><p>Based in Glossop, we understand the area, the homes and what local customers expect from a quality finish.</p></div>
+      <div class="why-card"><div class="why-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8621A" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>Fully coordinated</h4><p>All trades — plumbing, electrical, plastering — organised and managed by us. One less thing for you to worry about.</p></div>
+      <div class="why-card"><div class="why-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8621A" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h4>Aftercare support</h4><p>We don't disappear after completion. Any snagging or concerns are dealt with promptly and professionally.</p></div>
+    </div>
+  </div>
+  <div class="reviews-section">
+    <div style="text-align:center"><div class="page-header-label">What our customers say</div><h2 style="font-family:var(--font-display);font-size:clamp(28px,4vw,44px);font-weight:800">Customer Reviews</h2></div>
+    <div class="reviews-grid">
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Absolute stars. Our kitchen was completely transformed. On time, on budget and the result is beyond what we imagined."</p><div class="review-author">Sarah C. &mdash; Glossop</div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"From quote to completion in three weeks. Professional, tidy and the bathroom looks like something from a show home."</p><div class="review-author">Mark H. &mdash; Hadfield</div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"The tiling work on our kitchen floor is just stunning. Real craftsmanship — every tile is perfectly aligned."</p><div class="review-author">Deborah W. &mdash; Charlesworth</div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Turned up when they said, kept the place tidy every day and the final result is absolutely beautiful. Can't fault them."</p><div class="review-author">James T. &mdash; Tintwistle</div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"They coordinated everything — we didn't have to worry about a single trade. Brilliant service from start to finish."</p><div class="review-author">Rachel M. &mdash; Simmondley</div></div>
+      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Really honest, no-fuss quote. What they said it would cost is exactly what we paid. Lovely people to work with."</p><div class="review-author">Paul &amp; Linda B. &mdash; Padfield</div></div>
+    </div>
+  </div>
+  <div class="cta-band">
+    <h2>Ready to transform your home?</h2>
+    <p>Get a free no-obligation quote from Glossop's trusted kitchen and bathroom specialists.</p>
+    <button class="btn-white" onclick="goTo('contact')">Book a Free Home Visit</button>
+  </div>
+  <footer><div class="footer-inner"><div class="footer-bottom"><div class="footer-copy">&#169; 2025 Rushton Property Improvements. <span>Glossop, Derbyshire.</span></div><div class="footer-reg">Registered in England &amp; Wales &nbsp;&bull;&nbsp; <button onclick="openAdminLogin()" style="background:none;border:none;color:rgba(255,255,255,.15);font-size:11px;cursor:pointer;font-family:var(--font-body)" onmouseover="this.style.color='rgba(255,255,255,.4)'" onmouseout="this.style.color='rgba(255,255,255,.15)'">Admin</button></div></div></div></footer>
+</div>
+
+<!-- SERVICES -->
+<div class="page" id="page-services">
+  <div class="page-header"><div class="page-header-label">What we do</div><h1>Our Services</h1><p>From concept to completion, we handle every aspect of your kitchen or bathroom transformation.</p></div>
+  <div class="services-page-grid">
+    <div class="sp-card"><h3>Kitchen Fitting</h3><p>We supply and install bespoke kitchens to your exact specification. From initial design through to final fitting, we handle cabinets, worktops, appliances, splashbacks and all associated plumbing and electrical work. Every kitchen is unique — we work with your space, your style and your budget.</p></div>
+    <div class="sp-card"><h3>Bathroom Renovation</h3><p>Full bathroom transformations including suite selection and installation, tiling, plumbing, electrical, plastering and finishing. Whether you want a simple refresh or a complete luxury redesign, we coordinate every trade so you don't have to.</p></div>
+    <div class="sp-card"><h3>Tiling &amp; Flooring</h3><p>Precision tiling in ceramic, porcelain, natural stone, mosaic and feature tiles. Floor and wall tiling for kitchens, bathrooms, hallways and living spaces. Large format tiles, herringbone patterns, brickbond layouts — we do it all with meticulous attention to detail.</p></div>
+    <div class="sp-card"><h3>Joinery</h3><p>Bespoke joinery crafted to your specification. Fitted wardrobes, alcove shelving, media walls, under-stair storage, window boards and custom carpentry. We design and build pieces that are built to last and perfectly integrated into your home.</p></div>
+  </div>
+  <div class="why-us">
+    <div class="why-grid">
+      <div class="why-card"><div class="why-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8621A" stroke-width="2" stroke-linecap="round"><polyline points="20,6 9,17 4,12"/></svg></div><h4>Free home visit within 3 days</h4><p>We come to you, measure up and provide a full itemised quote — no obligation, no cost.</p></div>
+      <div class="why-card"><div class="why-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8621A" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h4>All trades coordinated</h4><p>Plumbing, electrical, plastering, tiling — all managed by us with no disruption to your routine.</p></div>
+      <div class="why-card"><div class="why-card-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#E8621A" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div><h4>Daily tidy-up throughout</h4><p>We respect your home. The site is tidied each day so you can live normally throughout the project.</p></div>
+    </div>
+  </div>
+  <footer><div class="footer-inner"><div class="footer-bottom"><div class="footer-copy">&#169; 2025 Rushton Property Improvements. <span>Glossop, Derbyshire.</span></div><div class="footer-reg">Registered in England &amp; Wales</div></div></div></footer>
+</div>
+
+<!-- GALLERY -->
+<div class="page" id="page-gallery">
+  <div class="page-header"><div class="page-header-label">Our Work</div><h1>Project Gallery</h1><p>A selection of completed kitchens, bathrooms and tiling projects across Glossop and the High Peak.</p></div>
+  <div style="background:var(--white);padding:48px 0">
+  <div class="pg-wrap">
+    <div class="pg-main" id="pgMain">
+      <div class="pg-main-img-wrap" id="pgMainImgWrap">
+        <img id="pgMainImg" src="" alt="Selected photo">
+        <div class="pg-main-overlay" onclick="pgOpenLightbox()">
+          <span class="pg-expand-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            View Full Size
+          </span>
+        </div>
+      </div>
+      <div class="pg-main-info">
+        <div class="pg-counter" id="pgCounter"></div>
+        <div class="pg-arrows">
+          <button class="pg-arrow" onclick="pgMove(-1)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15,18 9,12 15,6"/></svg></button>
+          <button class="pg-arrow" onclick="pgMove(1)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9,18 15,12 9,6"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="pg-thumbs-wrap"><div class="pg-thumbs" id="pgThumbs"></div></div>
+    <div id="pgEmpty" class="pg-empty" style="display:none"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="18" r="4" stroke="currentColor" stroke-width="1.5"/><polyline points="6,34 16,24 24,32 32,22 42,34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><p>No photos yet</p></div>
+  </div>
+  </div>
+  <div class="pg-lightbox" id="pgLightbox" onclick="pgCloseLightbox()">
+    <button class="pg-lb-close" onclick="pgCloseLightbox()">&times;</button>
+    <button class="pg-lb-prev" onclick="pgLbMove(-1,event)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="15,18 9,12 15,6"/></svg></button>
+    <div class="pg-lb-img-wrap" onclick="event.stopPropagation()"><img id="pgLbImg" src="" alt="Full size"></div>
+    <button class="pg-lb-next" onclick="pgLbMove(1,event)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9,18 15,12 9,6"/></svg></button>
+    <div class="pg-lb-counter" id="pgLbCounter"></div>
+  </div>
+  <footer><div class="footer-inner"><div class="footer-bottom"><div class="footer-copy">&#169; 2025 Rushton Property Improvements. <span>Glossop, Derbyshire.</span></div><div class="footer-reg">Registered in England &amp; Wales</div></div></div></footer>
+</div>
+
+<!-- PROCESS -->
+<div class="page" id="page-process">
+  <div class="page-header"><div class="page-header-label">How we work</div><h1>Our Process</h1><p>A clear, structured approach that takes the stress out of home improvements.</p></div>
+  <div class="process-steps">
+    <div class="process-step active" id="step-0"><div class="ps-num">01</div><div class="ps-title">Free Home Visit</div><div class="ps-desc">We visit your home, discuss your vision and take detailed measurements at a time that suits you.</div></div>
+    <div class="process-step" id="step-1"><div class="ps-num">02</div><div class="ps-title">Fixed Price Quote</div><div class="ps-desc">Within 48 hours you receive a clear, itemised quote. The price you agree is the price you pay.</div></div>
+    <div class="process-step" id="step-2"><div class="ps-num">03</div><div class="ps-title">We Get to Work</div><div class="ps-desc">Our team arrives on the agreed start date. All trades are pre-arranged and coordinated by us.</div></div>
+    <div class="process-step" id="step-3"><div class="ps-num">04</div><div class="ps-title">Perfect Finish</div><div class="ps-desc">We complete a full snag check before handover. You only sign off when you are completely happy.</div></div>
+  </div>
+  <div class="process-stats">
+    <div class="process-stat"><div class="pnum">48h</div><div class="ptxt"><strong>Quote turnaround</strong>A clear itemised quote within two working days.</div></div>
+    <div class="process-stat"><div class="pnum">1</div><div class="ptxt"><strong>Point of contact</strong>One person manages your project start to finish.</div></div>
+    <div class="process-stat"><div class="pnum">100+</div><div class="ptxt"><strong>Completed projects</strong>Happy customers across Glossop and the High Peak.</div></div>
+  </div>
+  <div class="process-checklist-wrap">
+    <h3>Why our process works</h3>
+    <p>We eliminate uncertainty from day one. One project manager, one team, one fixed price.</p>
+    <ul class="process-checklist">
+      <li><span class="chk"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Free home visit within 3 days from enquiry</li>
+      <li><span class="chk"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Full quote before any work begins</li>
+      <li><span class="chk"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>All trades coordinated by us</li>
+      <li><span class="chk"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Daily tidy-up throughout the project</li>
+      <li><span class="chk"><svg width="12" height="12" viewBox="0 0 12 12" fill="none"><polyline points="2,6 5,9 10,3" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Aftercare support after completion</li>
+    </ul>
+  </div>
+  <footer><div class="footer-inner"><div class="footer-bottom"><div class="footer-copy">&#169; 2025 Rushton Property Improvements. <span>Glossop, Derbyshire.</span></div><div class="footer-reg">Registered in England &amp; Wales</div></div></div></footer>
+</div>
+
+<!-- PROJECTS -->
+<div class="page" id="page-projects">
+  <div class="page-header"><div class="page-header-label">Featured Work</div><h1>Our Projects</h1><p>A closer look at some of our favourite completed installations across the High Peak.</p></div>
+  <div class="container section-pad">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px" id="projectsGrid">
+      <div class="project-card" data-pcat="kitchen" data-imgs="[]">
+        <div class="project-card-img"><div class="project-card-placeholder"><svg viewBox="0 0 48 48" fill="none"><rect x="6" y="14" width="36" height="26" rx="1" stroke="#D0CFCC" stroke-width="1.5"/><path d="M6 22h36" stroke="#D0CFCC" stroke-width="1.5"/><rect x="14" y="22" width="10" height="10" stroke="#D0CFCC" stroke-width="1.2"/></svg><span>Add images via admin</span></div></div>
+        <div class="project-card-body"><div class="project-card-title">Project One</div><div class="project-card-desc">Add a description for this project via the admin panel.</div></div>
+      </div>
+      <div class="project-card" data-pcat="bathroom" data-imgs="[]">
+        <div class="project-card-img"><div class="project-card-placeholder"><svg viewBox="0 0 48 48" fill="none"><path d="M8 30c0-8 5-14 16-14s16 6 16 14" stroke="#D0CFCC" stroke-width="1.5" stroke-linecap="round"/><path d="M4 30h40" stroke="#D0CFCC" stroke-width="1.5"/></svg><span>Add images via admin</span></div></div>
+        <div class="project-card-body"><div class="project-card-title">Project Two</div><div class="project-card-desc">Add a description for this project via the admin panel.</div></div>
+      </div>
+      <div class="project-card" data-pcat="tiling" data-imgs="[]">
+        <div class="project-card-img"><div class="project-card-placeholder"><svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="16" height="16" rx="1" stroke="#D0CFCC" stroke-width="1.5"/><rect x="26" y="6" width="16" height="16" rx="1" stroke="#D0CFCC" stroke-width="1.5"/><rect x="6" y="26" width="16" height="16" rx="1" stroke="#D0CFCC" stroke-width="1.5"/><rect x="26" y="26" width="16" height="16" rx="1" stroke="#D0CFCC" stroke-width="1.5"/></svg><span>Add images via admin</span></div></div>
+        <div class="project-card-body"><div class="project-card-title">Project Three</div><div class="project-card-desc">Add a description for this project via the admin panel.</div></div>
+      </div>
+      <div class="project-card" data-pcat="wetroom" data-imgs="[]">
+        <div class="project-card-img"><div class="project-card-placeholder"><svg viewBox="0 0 48 48" fill="none"><rect x="10" y="8" width="28" height="34" rx="2" stroke="#D0CFCC" stroke-width="1.5"/><circle cx="24" cy="28" r="5" stroke="#D0CFCC" stroke-width="1.5"/></svg><span>Add images via admin</span></div></div>
+        <div class="project-card-body"><div class="project-card-title">Project Four</div><div class="project-card-desc">Add a description for this project via the admin panel.</div></div>
+      </div>
+    </div>
+  </div>
+  <footer><div class="footer-inner"><div class="footer-bottom"><div class="footer-copy">&#169; 2025 Rushton Property Improvements. <span>Glossop, Derbyshire.</span></div><div class="footer-reg">Registered in England &amp; Wales</div></div></div></footer>
+</div>
+
+<!-- CONTACT -->
+<div class="page" id="page-contact">
+  <div class="page-header"><div class="page-header-label">Get in touch</div><h1>Get a Free Quote</h1><p>Tell us about your project and we'll arrange a free home visit within 3 days.</p></div>
+  <div class="contact-wrap" style="grid-template-columns:1fr;max-width:600px">
+    <div>
+      <div class="contact-info-title">Get in touch directly</div>
+      <div class="contact-info-item"><div><div class="ci-label">Phone</div><div class="ci-val"><a href="tel:07951797755">07951 797755</a></div></div></div>
+      <div class="contact-info-item"><div><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:rushtonprop@gmail.com">rushtonprop@gmail.com</a></div></div></div>
+      <div class="contact-info-item"><div><div class="ci-label">Based in</div><div class="ci-val">Glossop, Derbyshire SK13</div></div></div>
+      <div class="contact-info-item"><div><div class="ci-label">Serving</div><div class="ci-val">Glossop, Hadfield, Tintwistle, Charlesworth, Padfield, Simmondley, Gamesley, Hollingworth, Mottram and the wider High Peak</div></div></div>
+    </div>
+  </div>
+  <footer><div class="footer-inner"><div class="footer-bottom"><div class="footer-copy">&#169; 2025 Rushton Property Improvements. <span>Glossop, Derbyshire.</span></div><div class="footer-reg">Registered in England &amp; Wales</div></div></div></footer>
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="closeLightbox()"><div id="lightboxContent"></div></div>
+
+<!-- ADMIN LOGIN -->
+<div id="adminLoginModal" style="display:none" class="admin-modal">
+  <div class="admin-modal-box">
+    <h3>Admin Access</h3>
+    <p>Enter your password to manage the site</p>
+    <input type="password" id="adminPassInput" placeholder="••••" onkeydown="if(event.key==='Enter')checkLogin()">
+    <button onclick="checkLogin()">Enter</button>
+  </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div class="admin-panel" id="adminPanel">
+  <div class="admin-inner">
+    <div class="admin-header">
+      <div class="admin-logo">Rushton<span>.</span> Admin</div>
+      <button class="admin-close-btn" onclick="adminLogout()">&times;</button>
+    </div>
+
+    <div class="admin-section">
+      <div class="admin-section-title">Gallery Images</div>
+      <div class="admin-section-sub">Paste Cloudinary image URLs to add them to the gallery.</div>
+      <div id="adminGalleryList" style="display:flex;flex-direction:column;gap:6px;max-height:320px;overflow-y:auto;margin-bottom:10px"></div>
+      <div style="display:flex;gap:8px;margin-bottom:6px">
+        <input type="url" id="galleryUrlInput" placeholder="Paste Cloudinary URL..." style="flex:1;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);color:#fff;padding:10px 12px;font-family:var(--font-body);font-size:13px;outline:none" onfocus="this.style.borderColor='#E8621A'" onblur="this.style.borderColor='rgba(255,255,255,.15)'">
+        <button onclick="addGalleryUrl()" style="padding:10px 18px;background:#E8621A;color:#fff;border:none;font-family:var(--font-display);font-size:13px;font-weight:700;cursor:pointer">Add</button>
+      </div>
+      <p style="font-size:11px;color:rgba(255,255,255,.25);margin:0">Paste a Cloudinary URL and click Add. Changes save instantly.</p>
+    </div>
+
+    <div class="admin-section">
+      <div class="admin-section-title">Edit Site Text</div>
+      <div class="admin-section-sub">Update contact details and key figures.</div>
+      <div class="admin-field"><label>Phone Number</label><input type="text" id="txtPhone" value="07951 797755"></div>
+      <div class="admin-field"><label>Email Address</label><input type="email" id="txtEmail" value="rushtonprop@gmail.com"></div>
+      <button class="admin-save-btn" onclick="saveText()">Save Changes</button>
+    </div>
+
+    <div class="admin-section">
+      <div class="admin-section-title">Manage Projects</div>
+      <div class="admin-section-sub">Edit the name, description and images for each of the four projects.</div>
+      <div id="adminCurrentProjects" style="margin-bottom:16px"></div>
+    </div>
+
+  </div>
+</div>
+<div class="admin-toast" id="adminToast"></div>
+
+<!-- SEO hidden text -->
+<div style="display:none" aria-hidden="true">
+  <p>Rushton Property Improvements provides expert kitchen fitting, bathroom renovation, tiling and flooring services across Glossop, Hadfield, Tintwistle, Charlesworth, Padfield, Simmondley, Gamesley, Old Glossop, Hollingworth, Mottram, Broadbottom and the wider High Peak area of Derbyshire.</p>
+</div>
+
+<script>
+var PAGES = ['home','services','gallery','process','projects','contact'];
+var currentPage = 'home';
+var projCatNames = { kitchen:'Kitchen', bathroom:'Bathroom', tiling:'Tiling', wetroom:'Other Work' };
+
+var PAGE_TITLES = {
+  home: 'Rushton Property Improvements | Kitchen & Bathroom Specialists, Glossop, Derbyshire',
+  services: 'Our Services | Kitchen Fitting, Bathroom Renovation, Tiling | Rushton Property Improvements',
+  gallery: 'Project Gallery | Kitchens, Bathrooms & Tiling | Rushton Property Improvements, Glossop',
+  process: 'Our Process | How We Work | Rushton Property Improvements, Glossop',
+  projects: 'Featured Projects | Kitchen & Bathroom Work | Rushton Property Improvements, Glossop',
+  contact: 'Get a Free Quote | Contact Rushton Property Improvements, Glossop'
+};
+
+function goTo(page) {
+  if (PAGES.indexOf(page) === -1) return;
+  PAGES.forEach(function(p) { document.getElementById('page-'+p).classList.remove('active'); });
+  document.getElementById('page-'+page).classList.add('active');
+  currentPage = page;
+  document.querySelectorAll('[data-page]').forEach(function(a) { a.classList.toggle('active', a.dataset.page === page); });
+  document.getElementById('mainNav').classList.toggle('at-top-home', page === 'home' && window.scrollY < 60);
+  if (PAGE_TITLES[page]) document.title = PAGE_TITLES[page];
+  window.scrollTo(0,0);
+  if (page === 'process') startProcessAnim();
+}
+
+function openMenu(){ document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeMenu(){ document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow=''; }
+
+window.addEventListener('scroll', function() {
+  document.getElementById('mainNav').classList.toggle('at-top-home', currentPage === 'home' && window.scrollY < 60);
+  document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// PROCESS ANIMATION
+var processTimer;
+function startProcessAnim() {
+  clearInterval(processTimer);
+  var active = 0;
+  var steps = document.querySelectorAll('.process-step');
+  steps.forEach(function(s,i){ s.classList.toggle('active', i===0); });
+  processTimer = setInterval(function() {
+    steps[active].classList.remove('active');
+    active = (active + 1) % steps.length;
+    steps[active].classList.add('active');
+  }, 2500);
+}
+
+// CONTACT FORM
+function submitForm() {
+  var name = document.getElementById('cName').value.trim();
+  var email = document.getElementById('cEmail').value.trim();
+  if (!name || !email) { alert('Please fill in your name and email.'); return; }
+  document.getElementById('contactForm').style.display = 'none';
+  document.getElementById('contactSuccess').style.display = 'block';
+}
+
+// LIGHTBOX
+function openLightbox(el) {
+  var lb = document.getElementById('lightbox');
+  var content = document.getElementById('lightboxContent');
+  content.innerHTML = '';
+  var img = document.createElement('img');
+  img.src = el.src || el.querySelector('img').src;
+  img.style.cssText = 'max-width:90vw;max-height:85vh;object-fit:contain';
+  content.appendChild(img);
+  lb.classList.add('open');
+}
+function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); }
+
+// PROJECT LIGHTBOX
+function openProjLightbox(imgs, startIdx) {
+  var lb = document.getElementById('lightbox');
+  var content = document.getElementById('lightboxContent');
+  content.innerHTML = '';
+  var current = startIdx || 0;
+  function showImg(idx) {
+    content.innerHTML = '';
+    var img = document.createElement('img'); img.src = imgs[idx];
+    img.style.cssText = 'max-width:90vw;max-height:80vh;object-fit:contain;display:block';
+    content.appendChild(img);
+    if (imgs.length > 1) {
+      var counter = document.createElement('div');
+      counter.style.cssText = 'color:rgba(255,255,255,.5);text-align:center;font-size:13px;margin-top:12px';
+      counter.textContent = (idx+1) + ' / ' + imgs.length;
+      content.appendChild(counter);
+      var prev = document.createElement('button'); prev.innerHTML = '&#8592;';
+      prev.style.cssText = 'position:fixed;left:20px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.1);border:none;color:#fff;font-size:28px;width:48px;height:48px;cursor:pointer;z-index:1001';
+      prev.addEventListener('click', function(e){ e.stopPropagation(); current=(current-1+imgs.length)%imgs.length; showImg(current); });
+      var next = document.createElement('button'); next.innerHTML = '&#8594;';
+      next.style.cssText = 'position:fixed;right:20px;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.1);border:none;color:#fff;font-size:28px;width:48px;height:48px;cursor:pointer;z-index:1001';
+      next.addEventListener('click', function(e){ e.stopPropagation(); current=(current+1)%imgs.length; showImg(current); });
+      content.appendChild(prev); content.appendChild(next);
+    }
+  }
+  showImg(current);
+  lb.classList.add('open');
+}
+
+// ADMIN
+function openAdminLogin() { document.getElementById('adminLoginModal').style.display='flex'; setTimeout(function(){ document.getElementById('adminPassInput').focus(); },100); }
+function checkLogin() {
+  if (document.getElementById('adminPassInput').value === '1443') {
+    document.getElementById('adminLoginModal').style.display='none';
+    openAdminPanel();
+  } else {
+    document.getElementById('adminPassInput').value='';
+    document.getElementById('adminPassInput').style.borderColor='#ff4444';
+  }
+}
+function openAdminPanel() {
+  document.getElementById('adminPanel').classList.add('open');
+  document.body.style.overflow='hidden';
+  loadAdminGallery();
+  loadCurrentProjects();
+  loadTextFields();
+}
+function adminLogout() {
+  document.getElementById('adminPanel').classList.remove('open');
+  document.body.style.overflow='';
+}
+function showToast(msg) {
+  var t = document.getElementById('adminToast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(function(){ t.classList.remove('show'); }, 3000);
+}
+
+// TEXT EDITOR
+function loadTextFields() {
+  var phone = localStorage.getItem('rpi_phone');
+  var email = localStorage.getItem('rpi_email');
+  if (phone) document.getElementById('txtPhone').value = phone;
+  if (email) document.getElementById('txtEmail').value = email;
+}
+function saveText() {
+  var phone = document.getElementById('txtPhone').value.trim();
+  var email = document.getElementById('txtEmail').value.trim();
+  if (phone) { localStorage.setItem('rpi_phone', phone); document.querySelectorAll('.ci-val a[href^="tel"]').forEach(function(a){ a.textContent = phone; a.href = 'tel:'+phone.replace(/\s/g,''); }); }
+  if (email) { localStorage.setItem('rpi_email', email); document.querySelectorAll('.ci-val a[href^="mailto"]').forEach(function(a){ a.textContent = email; a.href = 'mailto:'+email; }); }
+  showToast('\u2713 Changes saved');
+}
+function restoreSavedText() {
+  var phone = localStorage.getItem('rpi_phone');
+  var email = localStorage.getItem('rpi_email');
+  if (phone) document.querySelectorAll('.ci-val a[href^="tel"]').forEach(function(a){ a.textContent = phone; a.href = 'tel:'+phone.replace(/\s/g,''); });
+  if (email) document.querySelectorAll('.ci-val a[href^="mailto"]').forEach(function(a){ a.textContent = email; a.href = 'mailto:'+email; });
+}
+
+// GALLERY URLS
+var galleryUrls = [];
+function loadGalleryUrls() {
+  try { var s = localStorage.getItem('rpi_gallery_urls'); if (s) galleryUrls = JSON.parse(s); } catch(e) {}
+}
+function saveGalleryUrls() {
+  try { localStorage.setItem('rpi_gallery_urls', JSON.stringify(galleryUrls)); } catch(e) {}
+}
+
+/* ===== PREMIUM GALLERY JS ===== */
+var pgIndex = 0;
+var pgAuto;
+var pgTouchX = 0;
+
+function buildSlider() {
+  var mainWrap = document.getElementById('pgMain');
+  var thumbsEl = document.getElementById('pgThumbs');
+  var thumbsWrap = document.querySelector('.pg-thumbs-wrap');
+  var empty = document.getElementById('pgEmpty');
+  var counter = document.getElementById('pgCounter');
+  if (!mainWrap) return;
+  if (thumbsEl) thumbsEl.innerHTML = '';
+  pgIndex = 0;
+  if (!galleryUrls.length) {
+    mainWrap.style.display = 'none';
+    if (thumbsWrap) thumbsWrap.style.display = 'none';
+    if (empty) empty.style.display = 'flex';
+    return;
+  }
+  mainWrap.style.display = '';
+  if (thumbsWrap) thumbsWrap.style.display = '';
+  if (empty) empty.style.display = 'none';
+  var mainImg = document.getElementById('pgMainImg');
+  if (mainImg) { mainImg.src = galleryUrls[0]; mainImg.style.opacity = '1'; }
+  var n = 1; var t = galleryUrls.length;
+  if (counter) counter.textContent = (n < 10 ? '0'+n : n) + ' / ' + (t < 10 ? '0'+t : t);
+  if (thumbsEl) {
+    galleryUrls.forEach(function(url, i) {
+      var t = document.createElement('div'); t.className = 'pg-thumb' + (i === 0 ? ' active' : '');
+      var ti = document.createElement('img'); ti.src = url; ti.loading = 'lazy'; ti.alt = 'Photo ' + (i+1);
+      t.appendChild(ti);
+      (function(idx){ t.addEventListener('click', function(){ pgGoTo(idx); }); })(i);
+      thumbsEl.appendChild(t);
+    });
+  }
+  clearInterval(pgAuto);
+  pgAuto = setInterval(function(){ pgMove(1); }, 6000);
+}
+
+function pgGoTo(idx) {
+  if (!galleryUrls.length) return;
+  var thumbEls = document.querySelectorAll('.pg-thumb');
+  if (thumbEls[pgIndex]) thumbEls[pgIndex].classList.remove('active');
+  pgIndex = (idx + galleryUrls.length) % galleryUrls.length;
+  var mainImg = document.getElementById('pgMainImg');
+  if (mainImg) {
+    mainImg.src = galleryUrls[pgIndex];
+  }
+  if (thumbEls[pgIndex]) {
+    thumbEls[pgIndex].classList.add('active');
+    thumbEls[pgIndex].scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});
+  }
+  var counter = document.getElementById('pgCounter');
+  var n = pgIndex + 1; var t = galleryUrls.length;
+  if (counter) counter.textContent = (n < 10 ? '0'+n : n) + ' / ' + (t < 10 ? '0'+t : t);
+}
+
+function pgMove(dir) {
+  pgGoTo(pgIndex + dir);
+  clearInterval(pgAuto);
+  pgAuto = setInterval(function(){ pgMove(1); }, 6000);
+}
+
+function pgOpenLightbox() {
+  var lb = document.getElementById('pgLightbox');
+  var img = document.getElementById('pgLbImg');
+  var ctr = document.getElementById('pgLbCounter');
+  if (!lb || !img) return;
+  img.src = galleryUrls[pgIndex];
+  var n = pgIndex+1; var t = galleryUrls.length;
+  if (ctr) ctr.textContent = (n < 10 ? '0'+n : n) + ' / ' + (t < 10 ? '0'+t : t);
+  lb.style.display = 'flex';
+  setTimeout(function(){ lb.classList.add('open'); }, 10);
+  document.body.style.overflow = 'hidden';
+}
+
+function pgCloseLightbox() {
+  var lb = document.getElementById('pgLightbox');
+  if (!lb) return;
+  lb.classList.remove('open');
+  setTimeout(function(){ lb.style.display = 'none'; }, 300);
+  document.body.style.overflow = '';
+}
+
+function pgLbMove(dir, e) {
+  if (e) e.stopPropagation();
+  pgGoTo(pgIndex + dir);
+  var img = document.getElementById('pgLbImg');
+  var ctr = document.getElementById('pgLbCounter');
+  if (img) img.src = galleryUrls[pgIndex];
+  var n = pgIndex+1; var t = galleryUrls.length;
+  if (ctr) ctr.textContent = (n < 10 ? '0'+n : n) + ' / ' + (t < 10 ? '0'+t : t);
+}
+
+function initSlider() {
+  var wrap = document.querySelector('.pg-wrap');
+  if (!wrap) return;
+  wrap.addEventListener('touchstart', function(e){ pgTouchX = e.touches[0].clientX; }, {passive:true});
+  wrap.addEventListener('touchend', function(e){
+    var dx = e.changedTouches[0].clientX - pgTouchX;
+    if (Math.abs(dx) > 40) pgMove(dx < 0 ? 1 : -1);
+  });
+  document.addEventListener('keydown', function(e){
+    var lb = document.getElementById('pgLightbox');
+    var onGallery = document.getElementById('page-gallery') && document.getElementById('page-gallery').classList.contains('active');
+    if (onGallery || (lb && lb.classList.contains('open'))) {
+      if (e.key === 'ArrowLeft') pgMove(-1);
+      if (e.key === 'ArrowRight') pgMove(1);
+      if (e.key === 'Escape') pgCloseLightbox();
+    }
+  });
+  loadGalleryUrls();
+  buildSlider();
+}
+
+
+
+function addGalleryUrl() {
+  var inp = document.getElementById('galleryUrlInput');
+  if (!inp) return;
+  var url = inp.value.trim();
+  if (!url || !url.startsWith('http')) { showToast('Please enter a valid URL'); return; }
+  galleryUrls.push(url);
+  saveGalleryUrls(); buildSlider(); loadAdminGallery();
+  inp.value = '';
+  showToast('\u2713 Image added to gallery');
+}
+
+function loadAdminGallery() {
+  var list = document.getElementById('adminGalleryList');
+  if (!list) return;
+  list.innerHTML = '';
+  if (!galleryUrls.length) {
+    list.innerHTML = '<p style="font-size:12px;color:rgba(255,255,255,.3)">No images added yet.</p>';
+    return;
+  }
+  galleryUrls.forEach(function(url, i) {
+    var row = document.createElement('div');
+    row.style.cssText = 'display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.03);padding:8px;border:1px solid rgba(255,255,255,.06)';
+    var img = document.createElement('img'); img.src = url;
+    img.style.cssText = 'width:60px;height:42px;object-fit:cover;flex-shrink:0';
+    var lbl = document.createElement('div');
+    lbl.style.cssText = 'flex:1;font-size:11px;color:rgba(255,255,255,.4);overflow:hidden;text-overflow:ellipsis;white-space:nowrap';
+    lbl.textContent = url.split('/').pop().split('?')[0];
+    var del = document.createElement('button'); del.innerHTML = '&times;';
+    del.style.cssText = 'background:rgba(255,50,50,.15);border:none;color:#ff8080;width:28px;height:28px;cursor:pointer;font-size:16px;flex-shrink:0';
+    (function(idx){ del.addEventListener('click', function(){
+      galleryUrls.splice(idx, 1);
+      saveGalleryUrls(); buildSlider(); loadAdminGallery();
+      showToast('Image removed');
+    }); })(i);
+    row.appendChild(img); row.appendChild(lbl); row.appendChild(del);
+    list.appendChild(row);
+  });
+}
+
+function initSlider() {
+  var wrap = document.querySelector('.slider-wrap');
+  if (!wrap) return;
+  wrap.addEventListener('touchstart', function(e){ sliderTouchX = e.touches[0].clientX; }, {passive:true});
+  wrap.addEventListener('touchend', function(e){
+    var dx = e.changedTouches[0].clientX - sliderTouchX;
+    if (Math.abs(dx) > 40) sliderMove(dx < 0 ? 1 : -1);
+  });
+  window.addEventListener('resize', function(){
+    var slides = document.querySelectorAll('.slide');
+    var track = document.getElementById('sliderTrack');
+    if (slides.length && track) track.style.transform = 'translateX(-' + (sliderIndex * slides[0].offsetWidth) + 'px)';
+  });
+  loadGalleryUrls();
+  buildSlider();
+  sliderAuto = setInterval(function(){ sliderMove(1); }, 5000);
+}
+
+
+restoreSavedText();
+restoreSavedProjects();
+var savedBinId = localStorage.getItem('rpi_bin_id');
+if (savedBinId) { loadFromRemote(savedBinId); }
+goTo('home');
+initSlider();
+
+function loadAdminGallery() {
+  var list = document.getElementById('adminGalleryList');
+  if (!list) return;
+  list.innerHTML = '';
+  if (!galleryUrls.length) {
+    list.innerHTML = '<p style="font-size:12px;color:rgba(255,255,255,.3)">No images added yet.</p>';
+    return;
+  }
+  galleryUrls.forEach(function(url, i) {
+    var row = document.createElement('div');
+    row.style.cssText = 'display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.03);padding:8px;border:1px solid rgba(255,255,255,.06)';
+    var img = document.createElement('img'); img.src = url;
+    img.style.cssText = 'width:60px;height:42px;object-fit:cover;flex-shrink:0';
+    var lbl = document.createElement('div');
+    lbl.style.cssText = 'flex:1;font-size:11px;color:rgba(255,255,255,.4);overflow:hidden;text-overflow:ellipsis;white-space:nowrap';
+    lbl.textContent = url.split('/').pop().split('?')[0];
+    var del = document.createElement('button'); del.innerHTML = '&times;';
+    del.style.cssText = 'background:rgba(255,50,50,.15);border:none;color:#ff8080;width:28px;height:28px;cursor:pointer;font-size:16px;flex-shrink:0';
+    (function(idx){ del.addEventListener('click', function(){
+      galleryUrls.splice(idx, 1);
+      saveGalleryUrls(); buildSlider(); loadAdminGallery();
+      showToast('Image removed');
+    }); })(i);
+    row.appendChild(img); row.appendChild(lbl); row.appendChild(del);
+    list.appendChild(row);
+  });
+}
+
+// PROJECTS
+function buildThumbGrid(card, allImgs, title) {
+  var existing = card.querySelector('.project-card-thumbs');
+  if (existing) existing.remove();
+  if (allImgs.length > 1) {
+    var thumbGrid = document.createElement('div'); thumbGrid.className = 'project-card-thumbs';
+    var maxShow = Math.min(allImgs.length - 1, 4);
+    for (var ti = 1; ti <= maxShow; ti++) {
+      var tw = document.createElement('div'); tw.className = 'project-card-thumb';
+      var ti2 = document.createElement('img'); ti2.src = allImgs[ti]; ti2.alt = title; tw.appendChild(ti2);
+      if (ti === 4 && allImgs.length > 5) {
+        var more = document.createElement('div'); more.className = 'project-card-thumb-more';
+        more.textContent = '+' + (allImgs.length - 4); tw.appendChild(more);
+      }
+      (function(imgs, idx){ tw.addEventListener('click', function(){ openProjLightbox(imgs, idx); }); })(allImgs, ti);
+      thumbGrid.appendChild(tw);
+    }
+    card.appendChild(thumbGrid);
+  }
+}
+
+function saveProjectsToStorage() {
+  try {
+    var items = [];
+    document.querySelectorAll('#projectsGrid .project-card').forEach(function(card) {
+      var title = card.querySelector('.project-card-title');
+      var desc = card.querySelector('.project-card-desc');
+      var imgs = [];
+      try { imgs = JSON.parse(card.dataset.imgs || '[]'); } catch(e) {}
+      items.push({ cat: card.dataset.pcat || 'kitchen', imgs: imgs, title: title ? title.textContent : '', desc: desc ? desc.textContent : '' });
+    });
+    if (items.length) localStorage.setItem('rpi_projects', JSON.stringify(items));
+  } catch(e) {}
+}
+
+function restoreSavedProjects() {
+  try {
+    var saved = localStorage.getItem('rpi_projects');
+    if (!saved) return;
+    var items = JSON.parse(saved);
+    var cards = document.querySelectorAll('#projectsGrid .project-card');
+    items.forEach(function(proj, i) {
+      if (!cards[i]) return;
+      var card = cards[i];
+      var titleEl = card.querySelector('.project-card-title');
+      var descEl = card.querySelector('.project-card-desc');
+      var rImgs = proj.imgs || [];
+      card.dataset.imgs = JSON.stringify(rImgs);
+      card.dataset.pcat = proj.cat || 'kitchen';
+      if (titleEl) titleEl.textContent = proj.title || titleEl.textContent;
+      if (descEl) descEl.textContent = proj.desc || '';
+      var imgDiv = card.querySelector('.project-card-img');
+      if (imgDiv && rImgs.length > 0) {
+        var existImg = imgDiv.querySelector('img');
+        if (!existImg) { existImg = document.createElement('img'); existImg.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover'; imgDiv.appendChild(existImg); }
+        existImg.src = rImgs[0];
+        var ph = imgDiv.querySelector('.project-card-placeholder'); if (ph) ph.remove();
+      }
+      buildThumbGrid(card, rImgs, proj.title || '');
+    });
+  } catch(e) {}
+}
+
+function loadCurrentProjects() {
+  var container = document.getElementById('adminCurrentProjects');
+  if (!container) return;
+  container.innerHTML = '';
+  var cards = document.querySelectorAll('#projectsGrid .project-card');
+  if (!cards.length) return;
+  var label = document.createElement('div');
+  label.style.cssText = 'font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.36);margin-bottom:16px';
+  label.textContent = 'Edit Projects';
+  container.appendChild(label);
+  cards.forEach(function(card, i) {
+    var titleEl = card.querySelector('.project-card-title');
+    var descEl = card.querySelector('.project-card-desc');
+    var title = titleEl ? titleEl.textContent : 'Project ' + (i+1);
+    var desc = descEl ? descEl.textContent : '';
+    var currentImgs = [];
+    try { currentImgs = JSON.parse(card.dataset.imgs || '[]'); } catch(e) {}
+    var row = document.createElement('div');
+    row.style.cssText = 'background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);padding:18px;margin-bottom:14px';
+    var hdr = document.createElement('div');
+    hdr.style.cssText = 'font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--orange);margin-bottom:14px';
+    hdr.textContent = 'Project ' + (i+1);
+    row.appendChild(hdr);
+    var nameLabel = document.createElement('div'); nameLabel.style.cssText = 'font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.36);margin-bottom:6px'; nameLabel.textContent = 'Title';
+    var nameInp = document.createElement('input'); nameInp.type = 'text'; nameInp.value = title;
+    nameInp.style.cssText = 'width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);color:#fff;padding:10px 12px;font-family:var(--font-body);font-size:14px;outline:none;margin-bottom:12px;display:block';
+    nameInp.addEventListener('focus', function(){ this.style.borderColor='#E8621A'; }); nameInp.addEventListener('blur', function(){ this.style.borderColor='rgba(255,255,255,.15)'; });
+    row.appendChild(nameLabel); row.appendChild(nameInp);
+    var descLabel = document.createElement('div'); descLabel.style.cssText = 'font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.36);margin-bottom:6px'; descLabel.textContent = 'Description';
+    var descInp = document.createElement('textarea'); descInp.rows = 6; descInp.value = desc;
+    descInp.style.cssText = 'width:100%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);color:#fff;padding:10px 12px;font-family:var(--font-body);font-size:14px;outline:none;margin-bottom:12px;display:block;resize:vertical';
+    descInp.addEventListener('focus', function(){ this.style.borderColor='#E8621A'; }); descInp.addEventListener('blur', function(){ this.style.borderColor='rgba(255,255,255,.15)'; });
+    row.appendChild(descLabel); row.appendChild(descInp);
+    var imgLabel = document.createElement('div'); imgLabel.style.cssText = 'font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.36);margin-bottom:6px'; imgLabel.textContent = 'Image URLs (Cloudinary)';
+    row.appendChild(imgLabel);
+    var urlListDiv = document.createElement('div'); urlListDiv.style.cssText = 'display:flex;flex-direction:column;gap:6px;margin-bottom:8px';
+    currentImgs.forEach(function(url) {
+      var urlRow = document.createElement('div'); urlRow.style.cssText = 'display:flex;gap:6px';
+      var urlInp = document.createElement('input'); urlInp.type = 'url'; urlInp.value = url;
+      urlInp.style.cssText = 'flex:1;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);color:#fff;padding:8px 10px;font-family:var(--font-body);font-size:13px;outline:none';
+      urlInp.addEventListener('focus', function(){ this.style.borderColor='#E8621A'; }); urlInp.addEventListener('blur', function(){ this.style.borderColor='rgba(255,255,255,.15)'; });
+      var delUrl = document.createElement('button'); delUrl.innerHTML = '&times;'; delUrl.style.cssText = 'background:rgba(255,50,50,.15);border:none;color:#ff8080;width:30px;cursor:pointer;font-size:16px;flex-shrink:0'; delUrl.addEventListener('click', function(){ urlRow.remove(); });
+      urlRow.appendChild(urlInp); urlRow.appendChild(delUrl); urlListDiv.appendChild(urlRow);
+    });
+    row.appendChild(urlListDiv);
+    var addUrlBtn = document.createElement('button'); addUrlBtn.textContent = '+ Add Image URL';
+    addUrlBtn.style.cssText = 'padding:7px 14px;background:transparent;border:1px dashed rgba(232,98,26,.4);color:#E8621A;font-family:var(--font-display);font-size:12px;font-weight:600;cursor:pointer;margin-bottom:14px;display:block';
+    addUrlBtn.addEventListener('click', function() {
+      var urlRow = document.createElement('div'); urlRow.style.cssText = 'display:flex;gap:6px;margin-top:6px';
+      var urlInp = document.createElement('input'); urlInp.type = 'url'; urlInp.placeholder = 'https://res.cloudinary.com/...';
+      urlInp.style.cssText = 'flex:1;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);color:#fff;padding:8px 10px;font-family:var(--font-body);font-size:13px;outline:none';
+      urlInp.addEventListener('focus', function(){ this.style.borderColor='#E8621A'; }); urlInp.addEventListener('blur', function(){ this.style.borderColor='rgba(255,255,255,.15)'; });
+      var delUrl = document.createElement('button'); delUrl.innerHTML = '&times;'; delUrl.style.cssText = 'background:rgba(255,50,50,.15);border:none;color:#ff8080;width:30px;cursor:pointer;font-size:16px;flex-shrink:0'; delUrl.addEventListener('click', function(){ urlRow.remove(); });
+      urlRow.appendChild(urlInp); urlRow.appendChild(delUrl); urlListDiv.appendChild(urlRow);
+    });
+    row.appendChild(addUrlBtn);
+    var btns = document.createElement('div'); btns.style.cssText = 'display:flex;gap:8px';
+    var saveBtn = document.createElement('button'); saveBtn.textContent = 'Save Changes';
+    saveBtn.style.cssText = 'flex:1;padding:10px;background:#E8621A;color:#fff;border:none;font-family:var(--font-display);font-size:13px;font-weight:700;cursor:pointer';
+    var delBtn = document.createElement('button'); delBtn.textContent = 'Remove';
+    delBtn.style.cssText = 'padding:10px 16px;background:rgba(255,50,50,.15);border:1px solid rgba(255,80,80,.3);color:#ff8080;font-family:var(--font-body);font-size:12px;cursor:pointer';
+    (function(c, r, nInp, dInp, uList, tEl, dEl) {
+      saveBtn.addEventListener('click', function() {
+        var newTitle = nInp.value.trim();
+        if (tEl && newTitle) tEl.textContent = newTitle;
+        if (dEl) dEl.textContent = dInp.value;
+        var newImgs = [];
+        uList.querySelectorAll('input[type="url"]').forEach(function(inp){ var v=inp.value.trim(); if(v) newImgs.push(v); });
+        c.dataset.imgs = JSON.stringify(newImgs);
+        var imgDiv = c.querySelector('.project-card-img');
+        if (imgDiv && newImgs.length > 0) {
+          var existImg = imgDiv.querySelector('img');
+          if (!existImg) { existImg = document.createElement('img'); existImg.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover'; imgDiv.appendChild(existImg); }
+          existImg.src = newImgs[0];
+          var ph = imgDiv.querySelector('.project-card-placeholder'); if (ph) ph.remove();
+        }
+        buildThumbGrid(c, newImgs, newTitle || title);
+        saveProjectsToStorage();
+        showToast('\u2713 Project saved');
+      });
+      delBtn.addEventListener('click', function() {
+        if (confirm('Remove this project?')) { c.remove(); r.remove(); saveProjectsToStorage(); loadCurrentProjects(); showToast('Project removed'); }
+      });
+    })(card, row, nameInp, descInp, urlListDiv, titleEl, descEl);
+    btns.appendChild(saveBtn); btns.appendChild(delBtn); row.appendChild(btns);
+    container.appendChild(row);
+  });
+}
+
+restoreSavedText();
+restoreSavedProjects();
+loadGalleryUrls();
+buildSlider();
+initSlider();
+goTo('home');
+</script>
+</body>
+</html>
